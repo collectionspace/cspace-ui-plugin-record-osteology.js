@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-record-osteology",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Osteology record plugin for the CollectionSpace UI",
   "author": "Ray Lee <ray.lee@lyrasis.org>",
   "license": "ECL-2.0",
@@ -20,7 +20,8 @@
   "files": [
     "dist",
     "lib",
-    "src"
+    "src",
+    "styles"
   ],
   "scripts": {
     "build": "npm run build-cjs && npm run build-umd",
