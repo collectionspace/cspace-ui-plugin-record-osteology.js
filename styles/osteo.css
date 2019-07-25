@@ -1,0 +1,383 @@
+.osteo-buttonbar > button  {
+  margin: 0 4px 4px 0;
+}
+
+.osteo-row {
+  display: flex;
+  margin-top: 10px;
+}
+
+.osteo-row > .osteo-column {
+  text-align: center;
+  flex: 1 0 33%;
+}
+
+.osteo-column > .osteo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.osteo {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.osteo fieldset {
+  border: none;
+}
+
+.osteo th, .osteo td {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
+  width: 16px;
+  position: relative;
+  border: 0;
+  padding: 0;
+}
+
+.osteo th {
+  vertical-align: bottom;
+  text-align: left;
+}
+
+.osteo td {
+  vertical-align: center;
+  text-align: center;
+  overflow: visible;
+}
+
+.osteo-form input[type="text"] {
+  width: 100%;
+  height: 19px;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.osteo-form input[type="text"]:focus {
+  outline: 2px solid black;
+  outline-offset: -1px;
+}
+
+.osteo-form input[type="text"]:disabled {
+  border-color: transparent;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.osteo .flat-label .sides {
+  height: 66px;
+}
+
+.osteo .sides {
+  height: 46px;
+}
+
+.osteo .sides > th {
+  vertical-align: top;
+}
+
+/* .osteo.vertebrae .sides > th {
+  text-align: center;
+} */
+
+.osteo .sides > th.right {
+  text-align: right;
+}
+
+.osteo .labels > th {
+  position: relative;
+}
+
+.osteo .labels > th > span {
+  font-size: 10px;
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  white-space: nowrap;
+}
+
+.osteo .labels > th > span, .osteo.vertebrae .labels > th.arch > span {
+  top: 14px;
+}
+
+.osteo.vertebrae .labels > th.centrum > span {
+  top: 14px;
+}
+
+.osteo.vertebrae .hspace {
+  width: 8px;
+}
+
+.osteo .flat-label .labels > th > span {
+  top: -2px;
+}
+
+.osteo .labels > th.complete > span {
+  top: -2px;
+  color: #0000e0;
+}
+
+.osteo .bone, .osteo .segment {
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 5px 0 5px;
+}
+
+.osteo .segment {
+  font-size: 12px;
+}
+
+.osteo input.sesamoid {
+  width: 96px;
+}
+
+.osteo input.mc, .osteo input.mt {
+  height: 80px;
+  text-align: center;
+}
+
+.osteo tbody {
+  border-bottom: 1em solid rgba(0, 0, 0, 0);
+}
+
+.osteo label > input[type="radio"] + span,
+.osteo label > input[type="checkbox"] + span {
+  display: block;
+  color: black;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+
+.osteo label > input[type="radio"] + span {
+  background-image: url(../images/radio-black-unchecked.svg);
+}
+
+.osteo label > input[type="checkbox"] + span {
+  background-image: url(../images/checkbox-unchecked.svg);
+}
+
+.osteo label > input[type="radio"].absent + span {
+  background-image: url(../images/radio-red-unchecked.svg);
+}
+
+.osteo label > input[type="radio"].complete + span {
+  background-image: url(../images/radio-blue-unchecked.svg);
+}
+
+.osteo label > input[type="checkbox"]:checked + span {
+  background-image: url(../images/checkbox-checked.svg);
+}
+
+.osteo label > input[type="radio"]:checked + span {
+  background-image: url(../images/radio-black-checked.svg);
+}
+
+.osteo label > input[type="radio"].absent:checked + span {
+  background-image: url(../images/radio-red-checked.svg);
+}
+
+.osteo label > input[type="radio"].complete:checked + span {
+  background-image: url(../images/radio-blue-checked.svg);
+}
+
+.osteo label > input[type="radio"]:focus + span,
+.osteo label > input[type="checkbox"]:focus + span {
+  outline: 2px solid black;
+  position: relative;
+  z-index: 1;
+}
+
+.osteo label > input[type="radio"],
+.osteo label > input[type="checkbox"] {
+  position: fixed;
+  left: -20px;
+  top: -20px;
+  width: 1px;
+  height: 1px;
+}
+
+.osteo input[name="C_centra_count"] {
+  height: 96px;
+}
+
+.osteo input[name="C_L_arch_count"], .osteo input[name="C_R_arch_count"] {
+  height: 112px;
+}
+
+.osteo input[name="T_centra_count"], .osteo input[name="T_L_arch_count"], .osteo input[name="T_R_arch_count"] {
+  height: 192px;
+}
+
+.osteo input[name="L_centra_count"], .osteo input[name="L_L_arch_count"], .osteo input[name="L_R_arch_count"] {
+  height: 80px;
+}
+
+.osteo input[name="S_centra_count"], .osteo input[name="S_L_ala_count"], .osteo input[name="S_R_ala_count"] {
+  height:96px;
+}
+
+.phalanges {
+  display: flex;
+  justify-content: center;
+}
+
+.phalanges > .osteo {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.phalanges > .osteo th {
+  white-space: nowrap;
+}
+
+.phalanges > .osteo > thead th {
+  text-align: center;
+}
+
+.phalanges > .osteo > tbody th {
+  text-align: right;
+  padding-right: 4px;
+}
+
+.phalanges > .osteo input,
+.phalanges input[type="text"] {
+  width: 50px;
+  text-align: center;
+}
+
+.phalanges input[name="Phalanx_juv_count_hand"],
+.phalanges input[name="Phalanx_juv_count_foot"] {
+  height: 61px;
+}
+
+.phalanges > label {
+  display: flex;
+  flex-direction: column;
+}
+
+.phalanges > label > div {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 2px 0;
+}
+
+.osteo.dental {
+  width: 420px;
+  height: 500px;
+  background-image: url(../images/dental_form.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 50px;
+  display: flex;
+}
+
+.osteo.dental button:disabled {
+  display: inline-block;
+  visibility: hidden;
+}
+
+.osteo.dental fieldset {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.osteo.dental .zeroButton {
+  position: relative;
+}
+
+.osteo.dental legend {
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.osteo.dental .permanent {
+  width: 252px;
+  position: relative;
+}
+
+.osteo.dental .permanent .zeroButton {
+  top: 210px;
+}
+
+.osteo.dental .permanent .upper legend {
+  top: 190px;
+}
+
+.osteo.dental .permanent .lower legend {
+  top: 310px;
+}
+
+.osteo.dental .deciduous {
+  margin-left: 18px;
+  width: 196px;
+  position: relative;
+}
+
+.osteo.dental .deciduous .zeroButton {
+  top: 132px;
+}
+
+.osteo.dental .deciduous .upper legend {
+  top: 130px;
+}
+
+.osteo.dental .deciduous .lower legend {
+  top: 210px;
+}
+
+.osteo.dental h3, .osteo.dental h4 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.osteo.dental .key {
+  font-size: 10px;
+}
+
+.osteo.dental label {
+  position: absolute;
+  font-size: 10px;
+}
+
+.osteo.dental label sub {
+  vertical-align: sub;
+}
+
+.osteo.dental fieldset input[type="text"] {
+  width: 100%;
+  background: none;
+  position: absolute;
+  border: none;
+}
+
+.osteo.dental fieldset input[type="text"]:focus {
+  background: white;
+}
+
+.osteo.dental .immVertFrags {
+  position: relative;
+  top: 270px;
+  font-size: 12px;
+}
+
+.osteo.dental .immVertFrags input[type="text"] {
+  width: 2em;
+  text-align: left;
+  padding: 1px 0 0 1px;
+}
