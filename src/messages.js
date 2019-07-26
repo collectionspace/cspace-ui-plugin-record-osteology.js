@@ -13,6 +13,24 @@ export default {
       defaultMessage: 'Osteology',
     },
   }),
+  inputTable: defineMessages({
+    completeness: {
+      id: 'inputTable.osteology.completeness',
+      defaultMessage: 'Completeness',
+    },
+    dentition: {
+      id: 'inputTable.osteology.dentition',
+      defaultMessage: 'Dentition',
+    },
+    mortuaryTreatment: {
+      id: 'inputTable.osteology.mortuaryTreatment',
+      defaultMessage: 'Mortuary treatment',
+    },
+    behrensmeyer: {
+      id: 'inputTable.osteology.behrensmeyer',
+      defaultMessage: 'Behrensmeyer stage',
+    },
+  }),
   panel: defineMessages({
     info: {
       id: 'panel.osteology.info',

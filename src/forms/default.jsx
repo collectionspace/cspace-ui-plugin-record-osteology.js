@@ -24,6 +24,7 @@ const template = (configContext) => {
 
   const {
     Field,
+    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -54,12 +55,38 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <InputTable name="completeness">
+          <Field name="completeness" />
+          <Field name="completenessNote" />
+        </InputTable>
+
+        <InputTable name="dentition">
+          <Field name="molarsPresent" />
+          <Field name="dentitionScore" />
+          <Field name="dentitionNote" />
+        </InputTable>
+
+        <Row>
+          <InputTable name="mortuaryTreatment">
+            <Field name="mortuaryTreatment" />
+            <Field name="mortuaryTreatmentNote" />
+          </InputTable>
+
+          <InputTable name="behrensmeyer">
+            <Field name="behrensmeyerSingleLower" />
+            <Field name="behrensmeyerUpper" />
+          </InputTable>
+        </Row>
+
         <Panel name="inventory" collapsible collapsed>
           <OsteoInventoryInput />
         </Panel>
 
         <Row>
-          <Field name="NotesOnElementInventory" />
+          <Col>
+            <Field name="NotesOnElementInventory" />
+            <Field name="pathologyNote" />
+          </Col>
 
           <Col>
             <Field name="InventoryIsComplete" />

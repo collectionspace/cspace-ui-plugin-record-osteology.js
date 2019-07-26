@@ -8,6 +8,7 @@ export default (configContext) => {
     DateInput,
     OptionPickerInput,
     StructuredDateInput,
+    TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
 
@@ -287,12 +288,193 @@ export default (configContext) => {
             },
           },
         },
+        completeness: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.completeness.name',
+                defaultMessage: 'Level',
+              },
+              fullName: {
+                id: 'field.osteology_common.completeness.fullName',
+                defaultMessage: 'Completeness level',
+              },
+            }),
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'osteocompleteness',
+              },
+            },
+          },
+        },
+        completenessNote: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.completenessNote.name',
+                defaultMessage: 'Note',
+              },
+              fullName: {
+                id: 'field.osteology_common.completenessNote.fullName',
+                defaultMessage: 'Completeness note',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
+          },
+        },
+        molarsPresent: {
+          [config]: {
+            dataType: DATA_TYPE_BOOL,
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.molarsPresent.name',
+                defaultMessage: 'Molars present',
+              },
+            }),
+            view: {
+              type: CheckboxInput,
+            },
+          },
+        },
+        dentitionScore: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.dentitionScore.name',
+                defaultMessage: 'Score',
+              },
+              fullName: {
+                id: 'field.osteology_common.dentitionScore.fullName',
+                defaultMessage: 'Dentition score',
+              },
+            }),
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'dentitionscore',
+              },
+            },
+          },
+        },
+        dentitionNote: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.dentitionNote.name',
+                defaultMessage: 'Note',
+              },
+              fullName: {
+                id: 'field.osteology_common.dentitionNote.fullName',
+                defaultMessage: 'Dentition note',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
+          },
+        },
+        mortuaryTreatment: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.mortuaryTreatment.name',
+                defaultMessage: 'Treatment',
+              },
+              fullName: {
+                id: 'field.osteology_common.mortuaryTreatment.fullName',
+                defaultMessage: 'Mortuary treatment',
+              },
+            }),
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'mortuarytreatment',
+              },
+            },
+          },
+        },
+        mortuaryTreatmentNote: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.mortuaryTreatmentNote.name',
+                defaultMessage: 'Note',
+              },
+              fullName: {
+                id: 'field.osteology_common.mortuaryTreatmentNote.fullName',
+                defaultMessage: 'Mortuary treatment note',
+              },
+            }),
+            view: {
+              type: TextInput,
+            },
+          },
+        },
+        behrensmeyerSingleLower: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.behrensmeyerSingleLower.name',
+                defaultMessage: 'Single/lower',
+              },
+              fullName: {
+                id: 'field.osteology_common.behrensmeyerSingleLower.fullName',
+                defaultMessage: 'Behrensmeyer stage - single/lower',
+              },
+            }),
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'behrensmeyer',
+              },
+            },
+          },
+        },
+        behrensmeyerUpper: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.behrensmeyerUpper.name',
+                defaultMessage: 'Upper',
+              },
+              fullName: {
+                id: 'field.osteology_common.behrensmeyerUpper.fullName',
+                defaultMessage: 'Behrensmeyer stage - upper',
+              },
+            }),
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'behrensmeyer',
+              },
+            },
+          },
+        },
         NotesOnElementInventory: {
           [config]: {
             messages: defineMessages({
               name: {
                 id: 'field.osteology_common.NotesOnElementInventory.name',
                 defaultMessage: 'Inventory note',
+              },
+            }),
+            view: {
+              type: TextInput,
+              props: {
+                multiline: true,
+              },
+            },
+          },
+        },
+        pathologyNote: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.osteology_common.pathologyNote.name',
+                defaultMessage: 'General pathology and trauma note',
               },
             }),
             view: {
