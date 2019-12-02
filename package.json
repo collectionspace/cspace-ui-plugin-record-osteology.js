@@ -58,7 +58,7 @@
     "chai-immutable": "^1.6.0",
     "coveralls": "^3.0.2",
     "cross-env": "^2.0.0",
-    "cspace-ui": "^2.1.1",
+    "cspace-ui": "^3.2.0-rc.5",
     "css-loader": "^2.1.1",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^12.0.0",
