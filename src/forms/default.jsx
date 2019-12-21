@@ -31,7 +31,7 @@ const template = (configContext) => {
     <Field name="document">
       <Panel name="info" collapsible>
         <Row>
-          <Field name="InventoryID" />\
+          <Field name="InventoryID" />
           <Col />
         </Row>
 
@@ -106,7 +106,7 @@ const template = (configContext) => {
   );
 };
 
-export default configContext => ({
+export default (configContext) => ({
   messages: defineMessages({
     name: {
       id: 'form.osteology.default.name',

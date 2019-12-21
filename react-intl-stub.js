@@ -1,3 +1,3 @@
 module.exports = {
-  defineMessages: messages => messages,
+  defineMessages: (messages) => messages,
 };

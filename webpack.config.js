@@ -64,7 +64,7 @@ const config = {
     // increasing its size.
     new webpack.NormalModuleReplacementPlugin(
       /^react-intl$/,
-      path.resolve(__dirname, 'react-intl-stub.js')
+      path.resolve(__dirname, 'react-intl-stub.js'),
     ),
   ],
   resolve: {

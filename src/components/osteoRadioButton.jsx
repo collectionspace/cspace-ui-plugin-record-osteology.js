@@ -33,7 +33,8 @@ export default (configContext) => {
     }
 
     return (
-      // eslint-disable-next-line jsx-a11y/label-has-for
+      // FIXME
+      // eslint-disable-next-line jsx-a11y/label-has-associated-control
       <label>
         <input
           className={className}

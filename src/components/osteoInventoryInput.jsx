@@ -1,6 +1,6 @@
 /* global window */
 
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-webpack-loader-syntax, import/no-unresolved
 import '!style-loader!css-loader!../../styles/osteo.css';
 import osteoRadioButton from './osteoRadioButton';
 import osteoCheckbox from './osteoCheckbox';
@@ -1435,7 +1435,7 @@ Object.keys(relations).forEach((parentName) => {
   }
 });
 
-const allFieldsHaveValue = (data, names, value) => names.every(name => data.get(name) === value);
+const allFieldsHaveValue = (data, names, value) => names.every((name) => data.get(name) === value);
 
 const computeValue = (data, name) => {
   let value = data.get(name);
@@ -1480,14 +1480,14 @@ export default (configContext) => {
   const Checkbox = osteoCheckbox(configContext);
 
   const propTypes = {
-    name: PropTypes.string,
     /* eslint-disable react/no-unused-prop-types */
+    name: PropTypes.string,
     parentPath: pathPropType,
     subpath: pathPropType,
+    children: PropTypes.node,
     /* eslint-enable react/no-unused-prop-types */
     value: PropTypes.instanceOf(Immutable.Map),
     readOnly: PropTypes.bool,
-    children: PropTypes.node,
     onCommit: PropTypes.func,
   };
 
@@ -1532,7 +1532,7 @@ export default (configContext) => {
         const nextData = data.withMutations((map) => {
           Object
             .keys(this.textFieldNames)
-            .filter(name => namePattern.test(name))
+            .filter((name) => namePattern.test(name))
             .forEach((name) => {
               map.set(name, value);
             });
@@ -1704,7 +1704,10 @@ export default (configContext) => {
         );
       }
 
-      /* eslint-disable jsx-a11y/label-has-for, max-len */
+      // FIXME: Properly associate labels with all controls.
+      /* eslint-disable
+         jsx-a11y/control-has-associated-label,
+         jsx-a11y/label-has-associated-control */
       return (
         <div className="osteo-form">
           {buttonBar}
@@ -4546,45 +4549,173 @@ export default (configContext) => {
                   <fieldset className="upper">
                     <legend>Upper</legend>
 
-                    <label style={{ left: 40, top: 219 }}>RM<sup>3</sup><input name="Teeth_UM3_R" type="text" style={{ left: -29, top: -2 }} /></label>
-                    <label style={{ left: 43, top: 194 }}>RM<sup>2</sup><input name="Teeth_UM2_R" type="text" style={{ left: -29, top: -3 }} /></label>
-                    <label style={{ left: 49, top: 167 }}>RM<sup>1</sup><input name="Teeth_UM1_R" type="text" style={{ left: -29, top: -9 }} /></label>
-                    <label style={{ left: 53, top: 143 }}>RP<sup>4</sup><input name="Teeth_UP4_R" type="text" style={{ left: -25, top: -11 }} /></label>
-                    <label style={{ left: 17, top: 102 }}>RP<sup>3</sup><input name="Teeth_UP3_R" type="text" style={{ left: 21, top: 12 }} /></label>
-                    <label style={{ left: 32, top: 76 }}>RC<sup>X</sup><input name="Teeth_UC_R" type="text" style={{ left: 16, top: 17 }} /></label>
-                    <label style={{ left: 55, top: 53 }}>RI<sup>2</sup><input name="Teeth_UI2_R" type="text" style={{ left: 11, top: 18 }} /></label>
-                    <label style={{ left: 92, top: 41 }}>RI<sup>1</sup><input name="Teeth_UI1_R" type="text" style={{ left: 0, top: 22 }} /></label>
+                    <label style={{ left: 40, top: 219 }}>
+                      RM
+                      <sup>3</sup>
+                      <input name="Teeth_UM3_R" type="text" style={{ left: -29, top: -2 }} />
+                    </label>
+                    <label style={{ left: 43, top: 194 }}>
+                      RM
+                      <sup>2</sup>
+                      <input name="Teeth_UM2_R" type="text" style={{ left: -29, top: -3 }} />
+                    </label>
+                    <label style={{ left: 49, top: 167 }}>
+                      RM
+                      <sup>1</sup>
+                      <input name="Teeth_UM1_R" type="text" style={{ left: -29, top: -9 }} />
+                    </label>
+                    <label style={{ left: 53, top: 143 }}>
+                      RP
+                      <sup>4</sup>
+                      <input name="Teeth_UP4_R" type="text" style={{ left: -25, top: -11 }} />
+                    </label>
+                    <label style={{ left: 17, top: 102 }}>
+                      RP
+                      <sup>3</sup>
+                      <input name="Teeth_UP3_R" type="text" style={{ left: 21, top: 12 }} />
+                    </label>
+                    <label style={{ left: 32, top: 76 }}>
+                      RC
+                      <sup>X</sup>
+                      <input name="Teeth_UC_R" type="text" style={{ left: 16, top: 17 }} />
+                    </label>
+                    <label style={{ left: 55, top: 53 }}>
+                      RI
+                      <sup>2</sup>
+                      <input name="Teeth_UI2_R" type="text" style={{ left: 11, top: 18 }} />
+                    </label>
+                    <label style={{ left: 92, top: 41 }}>
+                      RI
+                      <sup>1</sup>
+                      <input name="Teeth_UI1_R" type="text" style={{ left: 0, top: 22 }} />
+                    </label>
 
-                    <label style={{ left: 124, top: 41 }}>LI<sup>1</sup><input name="Teeth_UI1_L" type="text" style={{ left: -4, top: 22 }} /></label>
-                    <label style={{ left: 160, top: 53 }}>LI<sup>2</sup><input name="Teeth_UI2_L" type="text" style={{ left: -14, top: 18 }} /></label>
-                    <label style={{ left: 179, top: 76 }}>LC<sup>X</sup><input name="Teeth_UC_L" type="text" style={{ left: -18, top: 17 }} /></label>
-                    <label style={{ left: 195, top: 102 }}>LP<sup>3</sup><input name="Teeth_UP3_L" type="text" style={{ left: -24, top: 12 }} /></label>
-                    <label style={{ left: 156, top: 143 }}>LP<sup>4</sup><input name="Teeth_UP4_L" type="text" style={{ left: 25, top: -11 }} /></label>
-                    <label style={{ left: 157, top: 167 }}>LM<sup>1</sup><input name="Teeth_UM1_L" type="text" style={{ left: 29, top: -9 }} /></label>
-                    <label style={{ left: 163, top: 194 }}>LM<sup>2</sup><input name="Teeth_UM2_L" type="text" style={{ left: 29, top: -3 }} /></label>
-                    <label style={{ left: 166, top: 219 }}>LM<sup>3</sup><input name="Teeth_UM3_L" type="text" style={{ left: 29, top: -2 }} /></label>
+                    <label style={{ left: 124, top: 41 }}>
+                      LI
+                      <sup>1</sup>
+                      <input name="Teeth_UI1_L" type="text" style={{ left: -4, top: 22 }} />
+                    </label>
+                    <label style={{ left: 160, top: 53 }}>
+                      LI
+                      <sup>2</sup>
+                      <input name="Teeth_UI2_L" type="text" style={{ left: -14, top: 18 }} />
+                    </label>
+                    <label style={{ left: 179, top: 76 }}>
+                      LC
+                      <sup>X</sup>
+                      <input name="Teeth_UC_L" type="text" style={{ left: -18, top: 17 }} />
+                    </label>
+                    <label style={{ left: 195, top: 102 }}>
+                      LP
+                      <sup>3</sup>
+                      <input name="Teeth_UP3_L" type="text" style={{ left: -24, top: 12 }} />
+                    </label>
+                    <label style={{ left: 156, top: 143 }}>
+                      LP
+                      <sup>4</sup>
+                      <input name="Teeth_UP4_L" type="text" style={{ left: 25, top: -11 }} />
+                    </label>
+                    <label style={{ left: 157, top: 167 }}>
+                      LM
+                      <sup>1</sup>
+                      <input name="Teeth_UM1_L" type="text" style={{ left: 29, top: -9 }} />
+                    </label>
+                    <label style={{ left: 163, top: 194 }}>
+                      LM
+                      <sup>2</sup>
+                      <input name="Teeth_UM2_L" type="text" style={{ left: 29, top: -3 }} />
+                    </label>
+                    <label style={{ left: 166, top: 219 }}>
+                      LM
+                      <sup>3</sup>
+                      <input name="Teeth_UM3_L" type="text" style={{ left: 29, top: -2 }} />
+                    </label>
                   </fieldset>
 
                   <fieldset className="lower">
                     <legend>Lower</legend>
 
-                    <label style={{ left: 50, top: 284 }}>RM<sub>3</sub><input name="Teeth_LM3_R" type="text" style={{ left: -30, top: 0 }} /></label>
-                    <label style={{ left: 53, top: 314 }}>RM<sub>2</sub><input name="Teeth_LM2_R" type="text" style={{ left: -30, top: 2 }} /></label>
-                    <label style={{ left: 62, top: 341 }}>RM<sub>1</sub><input name="Teeth_LM1_R" type="text" style={{ left: -29, top: 7 }} /></label>
-                    <label style={{ left: 64, top: 367 }}>RP<sub>4</sub><input name="Teeth_LP4_R" type="text" style={{ left: -21, top: 9 }} /></label>
-                    <label style={{ left: 30, top: 412 }}>RP<sub>3</sub><input name="Teeth_LP3_R" type="text" style={{ left: 20, top: -14 }} /></label>
-                    <label style={{ left: 46, top: 434 }}>RC<sub>X</sub><input name="Teeth_LC_R" type="text" style={{ left: 15, top: -18 }} /></label>
-                    <label style={{ left: 77, top: 446 }}>I<sub>2</sub><input name="Teeth_LI2_R" type="text" style={{ left: 5, top: -18 }} /></label>
-                    <label style={{ left: 100, top: 453 }}>I<sub>1</sub><input name="Teeth_LI1_R" type="text" style={{ left: -1, top: -20 }} /></label>
+                    <label style={{ left: 50, top: 284 }}>
+                      RM
+                      <sub>3</sub>
+                      <input name="Teeth_LM3_R" type="text" style={{ left: -30, top: 0 }} />
+                    </label>
+                    <label style={{ left: 53, top: 314 }}>
+                      RM
+                      <sub>2</sub>
+                      <input name="Teeth_LM2_R" type="text" style={{ left: -30, top: 2 }} />
+                    </label>
+                    <label style={{ left: 62, top: 341 }}>
+                      RM
+                      <sub>1</sub>
+                      <input name="Teeth_LM1_R" type="text" style={{ left: -29, top: 7 }} />
+                    </label>
+                    <label style={{ left: 64, top: 367 }}>
+                      RP
+                      <sub>4</sub>
+                      <input name="Teeth_LP4_R" type="text" style={{ left: -21, top: 9 }} />
+                    </label>
+                    <label style={{ left: 30, top: 412 }}>
+                      RP
+                      <sub>3</sub>
+                      <input name="Teeth_LP3_R" type="text" style={{ left: 20, top: -14 }} />
+                    </label>
+                    <label style={{ left: 46, top: 434 }}>
+                      RC
+                      <sub>X</sub>
+                      <input name="Teeth_LC_R" type="text" style={{ left: 15, top: -18 }} />
+                    </label>
+                    <label style={{ left: 77, top: 446 }}>
+                      I
+                      <sub>2</sub>
+                      <input name="Teeth_LI2_R" type="text" style={{ left: 5, top: -18 }} />
+                    </label>
+                    <label style={{ left: 100, top: 453 }}>
+                      I
+                      <sub>1</sub>
+                      <input name="Teeth_LI1_R" type="text" style={{ left: -1, top: -20 }} />
+                    </label>
 
-                    <label style={{ left: 122, top: 452 }}>I<sub>1</sub><input name="Teeth_LI1_L" type="text" style={{ left: -5, top: -20 }} /></label>
-                    <label style={{ left: 143, top: 445 }}>I<sub>2</sub><input name="Teeth_LI2_L" type="text" style={{ left: -9, top: -18 }} /></label>
-                    <label style={{ left: 162, top: 433 }}>LC<sub>X</sub><input name="Teeth_LC_L" type="text" style={{ left: -17, top: -18 }} /></label>
-                    <label style={{ left: 178, top: 412 }}>LP<sub>3</sub><input name="Teeth_LP3_L" type="text" style={{ left: -21, top: -15 }} /></label>
-                    <label style={{ left: 142, top: 367 }}>LP<sub>4</sub><input name="Teeth_LP4_L" type="text" style={{ left: 23, top: 8 }} /></label>
-                    <label style={{ left: 143, top: 341 }}>LM<sub>1</sub><input name="Teeth_LM1_L" type="text" style={{ left: 29, top: 7 }} /></label>
-                    <label style={{ left: 151, top: 314 }}>LM<sub>2</sub><input name="Teeth_LM2_L" type="text" style={{ left: 30, top: 2 }} /></label>
-                    <label style={{ left: 155, top: 284 }}>LM<sub>3</sub><input name="Teeth_LM3_L" type="text" style={{ left: 29, top: 0 }} /></label>
+                    <label style={{ left: 122, top: 452 }}>
+                      I
+                      <sub>1</sub>
+                      <input name="Teeth_LI1_L" type="text" style={{ left: -5, top: -20 }} />
+                    </label>
+                    <label style={{ left: 143, top: 445 }}>
+                      I
+                      <sub>2</sub>
+                      <input name="Teeth_LI2_L" type="text" style={{ left: -9, top: -18 }} />
+                    </label>
+                    <label style={{ left: 162, top: 433 }}>
+                      LC
+                      <sub>X</sub>
+                      <input name="Teeth_LC_L" type="text" style={{ left: -17, top: -18 }} />
+                    </label>
+                    <label style={{ left: 178, top: 412 }}>
+                      LP
+                      <sub>3</sub>
+                      <input name="Teeth_LP3_L" type="text" style={{ left: -21, top: -15 }} />
+                    </label>
+                    <label style={{ left: 142, top: 367 }}>
+                      LP
+                      <sub>4</sub>
+                      <input name="Teeth_LP4_L" type="text" style={{ left: 23, top: 8 }} />
+                    </label>
+                    <label style={{ left: 143, top: 341 }}>
+                      LM
+                      <sub>1</sub>
+                      <input name="Teeth_LM1_L" type="text" style={{ left: 29, top: 7 }} />
+                    </label>
+                    <label style={{ left: 151, top: 314 }}>
+                      LM
+                      <sub>2</sub>
+                      <input name="Teeth_LM2_L" type="text" style={{ left: 30, top: 2 }} />
+                    </label>
+                    <label style={{ left: 155, top: 284 }}>
+                      LM
+                      <sub>3</sub>
+                      <input name="Teeth_LM3_L" type="text" style={{ left: 29, top: 0 }} />
+                    </label>
                   </fieldset>
                 </div>
                 <div className="deciduous">
@@ -4596,38 +4727,120 @@ export default (configContext) => {
                   <fieldset className="upper">
                     <legend>Upper</legend>
 
-                    <label style={{ left: 34, top: 143 }}>Rdm<sup>2</sup><input name="Teeth_decid_Udm2_R" type="text" style={{ left: -30, top: -3 }} /></label>
-                    <label style={{ left: 39, top: 115 }}>Rdm<sup>1</sup><input name="Teeth_decid_Udm1_R" type="text" style={{ left: -26, top: -8 }} /></label>
-                    <label style={{ left: 11, top: 71 }}>Rdc<sup>x</sup><input name="Teeth_decid_Udc_R" type="text" style={{ left: 21, top: 13 }} /></label>
-                    <label style={{ left: 39, top: 51 }}>Rdi<sup>2</sup><input name="Teeth_decid_Udi2_R" type="text" style={{ left: 7, top: 16 }} /></label>
-                    <label style={{ left: 68, top: 44 }}>Rdi<sup>1</sup><input name="Teeth_decid_Udi1_R" type="text" style={{ left: -1, top: 17 }} /></label>
+                    <label style={{ left: 34, top: 143 }}>
+                      Rdm
+                      <sup>2</sup>
+                      <input name="Teeth_decid_Udm2_R" type="text" style={{ left: -30, top: -3 }} />
+                    </label>
+                    <label style={{ left: 39, top: 115 }}>
+                      Rdm
+                      <sup>1</sup>
+                      <input name="Teeth_decid_Udm1_R" type="text" style={{ left: -26, top: -8 }} />
+                    </label>
+                    <label style={{ left: 11, top: 71 }}>
+                      Rdc
+                      <sup>x</sup>
+                      <input name="Teeth_decid_Udc_R" type="text" style={{ left: 21, top: 13 }} />
+                    </label>
+                    <label style={{ left: 39, top: 51 }}>
+                      Rdi
+                      <sup>2</sup>
+                      <input name="Teeth_decid_Udi2_R" type="text" style={{ left: 7, top: 16 }} />
+                    </label>
+                    <label style={{ left: 68, top: 44 }}>
+                      Rdi
+                      <sup>1</sup>
+                      <input name="Teeth_decid_Udi1_R" type="text" style={{ left: -1, top: 17 }} />
+                    </label>
 
-                    <label style={{ left: 94, top: 44 }}>Ldi<sup>1</sup><input name="Teeth_decid_Udi1_L" type="text" style={{ left: -4, top: 17 }} /></label>
-                    <label style={{ left: 121, top: 51 }}>Ldi<sup>2</sup><input name="Teeth_decid_Udi2_L" type="text" style={{ left: -11, top: 16 }} /></label>
-                    <label style={{ left: 147, top: 73 }}>Ldc<sup>x</sup><input name="Teeth_decid_Udc_L" type="text" style={{ left: -24, top: 11 }} /></label>
-                    <label style={{ left: 111, top: 115 }}>Ldm<sup>1</sup><input name="Teeth_decid_Udm1_L" type="text" style={{ left: 27, top: -8 }} /></label>
-                    <label style={{ left: 116, top: 143 }}>Ldm<sup>2</sup><input name="Teeth_decid_Udm2_L" type="text" style={{ left: 31, top: -3 }} /></label>
+                    <label style={{ left: 94, top: 44 }}>
+                      Ldi
+                      <sup>1</sup>
+                      <input name="Teeth_decid_Udi1_L" type="text" style={{ left: -4, top: 17 }} />
+                    </label>
+                    <label style={{ left: 121, top: 51 }}>
+                      Ldi
+                      <sup>2</sup>
+                      <input name="Teeth_decid_Udi2_L" type="text" style={{ left: -11, top: 16 }} />
+                    </label>
+                    <label style={{ left: 147, top: 73 }}>
+                      Ldc
+                      <sup>x</sup>
+                      <input name="Teeth_decid_Udc_L" type="text" style={{ left: -24, top: 11 }} />
+                    </label>
+                    <label style={{ left: 111, top: 115 }}>
+                      Ldm
+                      <sup>1</sup>
+                      <input name="Teeth_decid_Udm1_L" type="text" style={{ left: 27, top: -8 }} />
+                    </label>
+                    <label style={{ left: 116, top: 143 }}>
+                      Ldm
+                      <sup>2</sup>
+                      <input name="Teeth_decid_Udm2_L" type="text" style={{ left: 31, top: -3 }} />
+                    </label>
                   </fieldset>
 
                   <fieldset className="lower">
                     <legend>Lower</legend>
 
-                    <label style={{ left: 36, top: 198 }}>Rdm<sub>2</sub><input name="Teeth_decid_Ldm2_R" type="text" style={{ left: -29, top: 1 }} /></label>
-                    <label style={{ left: 47, top: 228 }}>Rdm<sub>1</sub><input name="Teeth_decid_Ldm1_R" type="text" style={{ left: -28, top: 4 }} /></label>
-                    <label style={{ left: 27, top: 272 }}>dc<sub>x</sub><input name="Teeth_decid_Ldc_R" type="text" style={{ left: 11, top: -17 }} /></label>
-                    <label style={{ left: 50, top: 286 }}>di<sub>2</sub><input name="Teeth_decid_Ldi2_R" type="text" style={{ left: 4, top: -17 }} /></label>
-                    <label style={{ left: 72, top: 290 }}>di<sub>1</sub><input name="Teeth_decid_Ldi1_R" type="text" style={{ left: 0, top: -18 }} /></label>
+                    <label style={{ left: 36, top: 198 }}>
+                      Rdm
+                      <sub>2</sub>
+                      <input name="Teeth_decid_Ldm2_R" type="text" style={{ left: -29, top: 1 }} />
+                    </label>
+                    <label style={{ left: 47, top: 228 }}>
+                      Rdm
+                      <sub>1</sub>
+                      <input name="Teeth_decid_Ldm1_R" type="text" style={{ left: -28, top: 4 }} />
+                    </label>
+                    <label style={{ left: 27, top: 272 }}>
+                      dc
+                      <sub>x</sub>
+                      <input name="Teeth_decid_Ldc_R" type="text" style={{ left: 11, top: -17 }} />
+                    </label>
+                    <label style={{ left: 50, top: 286 }}>
+                      di
+                      <sub>2</sub>
+                      <input name="Teeth_decid_Ldi2_R" type="text" style={{ left: 4, top: -17 }} />
+                    </label>
+                    <label style={{ left: 72, top: 290 }}>
+                      di
+                      <sub>1</sub>
+                      <input name="Teeth_decid_Ldi1_R" type="text" style={{ left: 0, top: -18 }} />
+                    </label>
 
-                    <label style={{ left: 93, top: 290 }}>di<sub>1</sub><input name="Teeth_decid_Ldi1_L" type="text" style={{ left: -3, top: -18 }} /></label>
-                    <label style={{ left: 115, top: 285 }}>di<sub>2</sub><input name="Teeth_decid_Ldi2_L" type="text" style={{ left: -7, top: -16 }} /></label>
-                    <label style={{ left: 136, top: 272 }}>dc<sub>x</sub><input name="Teeth_decid_Ldc_L" type="text" style={{ left: -15, top: -17 }} /></label>
-                    <label style={{ left: 102, top: 228 }}>Ldm<sub>1</sub><input name="Teeth_decid_Ldm1_L" type="text" style={{ left: 28, top: 4 }} /></label>
-                    <label style={{ left: 113, top: 198 }}>Ldm<sub>2</sub><input name="Teeth_decid_Ldm2_L" type="text" style={{ left: 30, top: 0 }} /></label>
+                    <label style={{ left: 93, top: 290 }}>
+                      di
+                      <sub>1</sub>
+                      <input name="Teeth_decid_Ldi1_L" type="text" style={{ left: -3, top: -18 }} />
+                    </label>
+                    <label style={{ left: 115, top: 285 }}>
+                      di
+                      <sub>2</sub>
+                      <input name="Teeth_decid_Ldi2_L" type="text" style={{ left: -7, top: -16 }} />
+                    </label>
+                    <label style={{ left: 136, top: 272 }}>
+                      dc
+                      <sub>x</sub>
+                      <input name="Teeth_decid_Ldc_L" type="text" style={{ left: -15, top: -17 }} />
+                    </label>
+                    <label style={{ left: 102, top: 228 }}>
+                      Ldm
+                      <sub>1</sub>
+                      <input name="Teeth_decid_Ldm1_L" type="text" style={{ left: 28, top: 4 }} />
+                    </label>
+                    <label style={{ left: 113, top: 198 }}>
+                      Ldm
+                      <sub>2</sub>
+                      <input name="Teeth_decid_Ldm2_L" type="text" style={{ left: 30, top: 0 }} />
+                    </label>
                   </fieldset>
 
                   <div className="immVertFrags">
                     <h3>Imm. Vert. frags</h3>
-                    Count <input type="text" name="Teeth_immVertFragsCount" />
+                    Count
+                    {' '}
+                    <input type="text" name="Teeth_immVertFragsCount" />
                   </div>
                 </div>
               </div>
@@ -4635,7 +4848,9 @@ export default (configContext) => {
           </div>
         </div>
       );
-      /* eslint-enable jsx-a11y/label-has-for, max-len */
+      /* eslint-enable
+         jsx-a11y/control-has-associated-label,
+         jsx-a11y/label-has-associated-control */
     }
 
     renderForm(component) {
@@ -4668,12 +4883,16 @@ export default (configContext) => {
       }
 
       return React.cloneElement(component, overrideProps, React.Children.map(
-        children, child => this.renderForm(child))
-      );
+        children, (child) => this.renderForm(child),
+      ));
     }
 
     render() {
-      return (this.props.value ? this.renderForm(this.renderTemplate()) : null);
+      const {
+        value,
+      } = this.props;
+
+      return (value ? this.renderForm(this.renderTemplate()) : null);
     }
   }
 

@@ -17,7 +17,8 @@ export default (configContext) => {
     } = props;
 
     return (
-      // eslint-disable-next-line jsx-a11y/label-has-for
+      // FIXME
+      // eslint-disable-next-line jsx-a11y/label-has-associated-control
       <label>
         <input type="checkbox" disabled={!!readOnly} {...remainingProps} />
         <span />

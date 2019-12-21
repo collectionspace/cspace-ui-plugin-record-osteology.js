@@ -1,5 +1,5 @@
-describe('plugin', function suite() {
-  it('should...', function test() {
+describe('plugin', () => {
+  it('should...', () => {
     // This is a stub.
   });
 });
