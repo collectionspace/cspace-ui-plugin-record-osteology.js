@@ -553,7 +553,9 @@ export default (configContext) => {
         },
         // Osteo inventory fields.
         // NB: The below configuration is currently only used on advanced search. These fields are
-        // also hardcoded into osteoInventoryInput.jsx for display on the record editor.
+        // also hardcoded into osteoInventoryInput.jsx for display on the record editor. Since the
+        // fields are not configured directly in any forms, searchDisabled must be set explicitly
+        // to false so that they will appear in search.
         Acetabulum_L: {
           [config]: {
             messages: {
@@ -562,6 +564,7 @@ export default (configContext) => {
                 defaultMessage: 'Acetabulum left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -578,6 +581,7 @@ export default (configContext) => {
                 defaultMessage: 'Acetabulum right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -594,6 +598,7 @@ export default (configContext) => {
                 defaultMessage: 'Auricular surf. left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -610,6 +615,7 @@ export default (configContext) => {
                 defaultMessage: 'Auricular surf. right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -626,6 +632,7 @@ export default (configContext) => {
                 defaultMessage: 'C1 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -642,6 +649,7 @@ export default (configContext) => {
                 defaultMessage: 'C1 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -658,6 +666,7 @@ export default (configContext) => {
                 defaultMessage: 'C1',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -674,6 +683,7 @@ export default (configContext) => {
                 defaultMessage: 'C2 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -690,6 +700,7 @@ export default (configContext) => {
                 defaultMessage: 'C2 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -706,6 +717,7 @@ export default (configContext) => {
                 defaultMessage: 'C2 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -722,6 +734,7 @@ export default (configContext) => {
                 defaultMessage: 'C2',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -738,6 +751,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~3) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -754,6 +768,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~3) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -770,6 +785,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~3) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -786,6 +802,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~3)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -802,6 +819,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~4) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -818,6 +836,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~4) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -834,6 +853,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~4) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -850,6 +870,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~4)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -866,6 +887,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~5) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -882,6 +904,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~5) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -898,6 +921,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~5) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -914,6 +938,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~5)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -930,6 +955,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~6) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -946,6 +972,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~6) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -962,6 +989,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~6) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -978,6 +1006,7 @@ export default (configContext) => {
                 defaultMessage: 'C3-6 (~6)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -994,6 +1023,7 @@ export default (configContext) => {
                 defaultMessage: 'C7 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1010,6 +1040,7 @@ export default (configContext) => {
                 defaultMessage: 'C7 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1026,6 +1057,7 @@ export default (configContext) => {
                 defaultMessage: 'C7 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1042,6 +1074,7 @@ export default (configContext) => {
                 defaultMessage: 'C7',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1058,6 +1091,7 @@ export default (configContext) => {
                 defaultMessage: 'C left arch count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -1071,6 +1105,7 @@ export default (configContext) => {
                 defaultMessage: 'C right arch count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -1084,6 +1119,7 @@ export default (configContext) => {
                 defaultMessage: 'C centra count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -1097,6 +1133,7 @@ export default (configContext) => {
                 defaultMessage: 'Calcaneus left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1113,6 +1150,7 @@ export default (configContext) => {
                 defaultMessage: 'Calcaneus right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1129,6 +1167,7 @@ export default (configContext) => {
                 defaultMessage: 'Capitate left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1145,6 +1184,7 @@ export default (configContext) => {
                 defaultMessage: 'Capitate right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1161,6 +1201,7 @@ export default (configContext) => {
                 defaultMessage: 'Carpals left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1177,6 +1218,7 @@ export default (configContext) => {
                 defaultMessage: 'Carpals right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1193,6 +1235,7 @@ export default (configContext) => {
                 defaultMessage: 'Clavicle left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1209,6 +1252,7 @@ export default (configContext) => {
                 defaultMessage: 'Clavicle right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1225,6 +1269,7 @@ export default (configContext) => {
                 defaultMessage: 'Coccyx',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1242,6 +1287,7 @@ export default (configContext) => {
         //         defaultMessage: 'Coccyx',
         //       },
         //     },
+        //     searchDisabled: false,
         //     view: {
         //       type: OptionPickerInput,
         //       props: {
@@ -1258,6 +1304,7 @@ export default (configContext) => {
                 defaultMessage: 'Cranium',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1274,6 +1321,7 @@ export default (configContext) => {
                 defaultMessage: 'Cuboid left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1290,6 +1338,7 @@ export default (configContext) => {
                 defaultMessage: 'Cuboid right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1306,6 +1355,7 @@ export default (configContext) => {
                 defaultMessage: 'Ethmoid',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1322,6 +1372,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur left dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1338,6 +1389,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur left prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1354,6 +1406,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1370,6 +1423,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur left dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1386,6 +1440,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur left mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1402,6 +1457,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur left prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1418,6 +1474,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur right dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1434,6 +1491,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur right prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1450,6 +1508,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1466,6 +1525,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur right dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1482,6 +1542,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur right mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1498,6 +1559,7 @@ export default (configContext) => {
                 defaultMessage: 'Femur right prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1514,6 +1576,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula left dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1530,6 +1593,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula left prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1546,6 +1610,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1562,6 +1627,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula left dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1578,6 +1644,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula left mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1594,6 +1661,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula left prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1610,6 +1678,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula right dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1626,6 +1695,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula right prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1642,6 +1712,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1658,6 +1729,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula right dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1674,6 +1746,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula right mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1690,6 +1763,7 @@ export default (configContext) => {
                 defaultMessage: 'Fibula right prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1706,6 +1780,7 @@ export default (configContext) => {
                 defaultMessage: 'Frontal left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1722,6 +1797,7 @@ export default (configContext) => {
                 defaultMessage: 'Frontal right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1738,6 +1814,7 @@ export default (configContext) => {
                 defaultMessage: 'Glenoid left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1754,6 +1831,7 @@ export default (configContext) => {
                 defaultMessage: 'Glenoid right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1770,6 +1848,7 @@ export default (configContext) => {
                 defaultMessage: 'Hamate left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1786,6 +1865,7 @@ export default (configContext) => {
                 defaultMessage: 'Hamate right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1802,6 +1882,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus left dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1818,6 +1899,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus left prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1834,6 +1916,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1850,6 +1933,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus left dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1866,6 +1950,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus left mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1882,6 +1967,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus left prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1898,6 +1984,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus right dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1914,6 +2001,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus right prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1930,6 +2018,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1946,6 +2035,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus right dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1962,6 +2052,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus right mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1978,6 +2069,7 @@ export default (configContext) => {
                 defaultMessage: 'Humerus right prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -1994,6 +2086,7 @@ export default (configContext) => {
                 defaultMessage: 'Hyoid',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2010,6 +2103,7 @@ export default (configContext) => {
                 defaultMessage: 'Ilium left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2026,6 +2120,7 @@ export default (configContext) => {
                 defaultMessage: 'Ilium right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2042,6 +2137,7 @@ export default (configContext) => {
                 defaultMessage: 'Int. cuneiform (2) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2058,6 +2154,7 @@ export default (configContext) => {
                 defaultMessage: 'Int. cuneiform (2) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2074,6 +2171,7 @@ export default (configContext) => {
                 defaultMessage: 'Ischium left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2090,6 +2188,7 @@ export default (configContext) => {
                 defaultMessage: 'Ischium right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2106,6 +2205,7 @@ export default (configContext) => {
                 defaultMessage: 'L1 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2122,6 +2222,7 @@ export default (configContext) => {
                 defaultMessage: 'L1 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2138,6 +2239,7 @@ export default (configContext) => {
                 defaultMessage: 'L1 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2154,6 +2256,7 @@ export default (configContext) => {
                 defaultMessage: 'L1',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2170,6 +2273,7 @@ export default (configContext) => {
                 defaultMessage: 'L2 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2186,6 +2290,7 @@ export default (configContext) => {
                 defaultMessage: 'L2 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2202,6 +2307,7 @@ export default (configContext) => {
                 defaultMessage: 'L2 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2218,6 +2324,7 @@ export default (configContext) => {
                 defaultMessage: 'L2',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2234,6 +2341,7 @@ export default (configContext) => {
                 defaultMessage: 'L3 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2250,6 +2358,7 @@ export default (configContext) => {
                 defaultMessage: 'L3 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2266,6 +2375,7 @@ export default (configContext) => {
                 defaultMessage: 'L3 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2282,6 +2392,7 @@ export default (configContext) => {
                 defaultMessage: 'L3',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2298,6 +2409,7 @@ export default (configContext) => {
                 defaultMessage: 'L4 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2314,6 +2426,7 @@ export default (configContext) => {
                 defaultMessage: 'L4 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2330,6 +2443,7 @@ export default (configContext) => {
                 defaultMessage: 'L4 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2346,6 +2460,7 @@ export default (configContext) => {
                 defaultMessage: 'L4',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2362,6 +2477,7 @@ export default (configContext) => {
                 defaultMessage: 'L5 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2378,6 +2494,7 @@ export default (configContext) => {
                 defaultMessage: 'L5 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2394,6 +2511,7 @@ export default (configContext) => {
                 defaultMessage: 'L5 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2410,6 +2528,7 @@ export default (configContext) => {
                 defaultMessage: 'L5',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2426,6 +2545,7 @@ export default (configContext) => {
                 defaultMessage: 'L left arch count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2439,6 +2559,7 @@ export default (configContext) => {
                 defaultMessage: 'L right arch count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2452,6 +2573,7 @@ export default (configContext) => {
                 defaultMessage: 'L centra count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2465,6 +2587,7 @@ export default (configContext) => {
                 defaultMessage: 'Lacrimal left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2481,6 +2604,7 @@ export default (configContext) => {
                 defaultMessage: 'Lacrimal right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2497,6 +2621,7 @@ export default (configContext) => {
                 defaultMessage: 'Lat. cuneiform (3) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2513,6 +2638,7 @@ export default (configContext) => {
                 defaultMessage: 'Lat. cuneiform (3) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2529,6 +2655,7 @@ export default (configContext) => {
                 defaultMessage: 'Lunate left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2545,6 +2672,7 @@ export default (configContext) => {
                 defaultMessage: 'Lunate right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2561,6 +2689,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 1 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2577,6 +2706,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 1 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2593,6 +2723,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 2 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2609,6 +2740,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 2 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2625,6 +2757,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 3 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2641,6 +2774,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 3 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2657,6 +2791,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 4 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2673,6 +2808,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 4 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2689,6 +2825,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 5 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2705,6 +2842,7 @@ export default (configContext) => {
                 defaultMessage: 'MC 5 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2721,6 +2859,7 @@ export default (configContext) => {
                 defaultMessage: 'MC left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2737,6 +2876,7 @@ export default (configContext) => {
                 defaultMessage: 'MC left count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2750,6 +2890,7 @@ export default (configContext) => {
                 defaultMessage: 'MC right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2766,6 +2907,7 @@ export default (configContext) => {
                 defaultMessage: 'MC right count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2779,6 +2921,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 1 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2795,6 +2938,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 1 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2811,6 +2955,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 2 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2827,6 +2972,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 2 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2843,6 +2989,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 3 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2859,6 +3006,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 3 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2875,6 +3023,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 4 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2891,6 +3040,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 4 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2907,6 +3057,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 5 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2923,6 +3074,7 @@ export default (configContext) => {
                 defaultMessage: 'MT 5 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2939,6 +3091,7 @@ export default (configContext) => {
                 defaultMessage: 'MT left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2955,6 +3108,7 @@ export default (configContext) => {
                 defaultMessage: 'MT left count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2968,6 +3122,7 @@ export default (configContext) => {
                 defaultMessage: 'MT right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -2984,6 +3139,7 @@ export default (configContext) => {
                 defaultMessage: 'MT right count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -2997,6 +3153,7 @@ export default (configContext) => {
                 defaultMessage: 'Mandible left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3013,6 +3170,7 @@ export default (configContext) => {
                 defaultMessage: 'Mandible right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3029,6 +3187,7 @@ export default (configContext) => {
                 defaultMessage: 'Manubrium',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3045,6 +3204,7 @@ export default (configContext) => {
                 defaultMessage: 'Maxilla left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3061,6 +3221,7 @@ export default (configContext) => {
                 defaultMessage: 'Maxilla right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3077,6 +3238,7 @@ export default (configContext) => {
                 defaultMessage: 'Med. cuneiform (1) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3093,6 +3255,7 @@ export default (configContext) => {
                 defaultMessage: 'Med. cuneiform (1) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3109,6 +3272,7 @@ export default (configContext) => {
                 defaultMessage: 'Nasal left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3125,6 +3289,7 @@ export default (configContext) => {
                 defaultMessage: 'Nasal right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3141,6 +3306,7 @@ export default (configContext) => {
                 defaultMessage: 'Navicular left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3157,6 +3323,7 @@ export default (configContext) => {
                 defaultMessage: 'Navicular right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3173,6 +3340,7 @@ export default (configContext) => {
                 defaultMessage: 'Occipital',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3189,6 +3357,7 @@ export default (configContext) => {
                 defaultMessage: 'Occipital pars lateralis left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3205,6 +3374,7 @@ export default (configContext) => {
                 defaultMessage: 'Occipital pars lateralis right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3221,6 +3391,7 @@ export default (configContext) => {
                 defaultMessage: 'Occipital pars basilaris',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3237,6 +3408,7 @@ export default (configContext) => {
                 defaultMessage: 'Orbit left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3253,6 +3425,7 @@ export default (configContext) => {
                 defaultMessage: 'Orbit right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3269,6 +3442,7 @@ export default (configContext) => {
                 defaultMessage: 'Os coxae left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3285,6 +3459,7 @@ export default (configContext) => {
                 defaultMessage: 'Os coxae right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3301,6 +3476,7 @@ export default (configContext) => {
                 defaultMessage: 'Palatine left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3317,6 +3493,7 @@ export default (configContext) => {
                 defaultMessage: 'Palatine right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3333,6 +3510,7 @@ export default (configContext) => {
                 defaultMessage: 'Parietal left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3349,6 +3527,7 @@ export default (configContext) => {
                 defaultMessage: 'Parietal right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3365,6 +3544,7 @@ export default (configContext) => {
                 defaultMessage: 'Patella left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3381,6 +3561,7 @@ export default (configContext) => {
                 defaultMessage: 'Patella right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3397,6 +3578,7 @@ export default (configContext) => {
                 defaultMessage: 'Dist. foot phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3410,6 +3592,7 @@ export default (configContext) => {
                 defaultMessage: 'Dist. hand phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3423,6 +3606,7 @@ export default (configContext) => {
                 defaultMessage: 'Int. foot phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3436,6 +3620,7 @@ export default (configContext) => {
                 defaultMessage: 'Int. hand phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3449,6 +3634,7 @@ export default (configContext) => {
                 defaultMessage: 'Prox. foot phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3462,6 +3648,7 @@ export default (configContext) => {
                 defaultMessage: 'Prox. hand phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3475,6 +3662,7 @@ export default (configContext) => {
                 defaultMessage: 'Juv. foot phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3488,6 +3676,7 @@ export default (configContext) => {
                 defaultMessage: 'Juv. hand phalanges count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -3501,6 +3690,7 @@ export default (configContext) => {
                 defaultMessage: 'Pisiform left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3517,6 +3707,7 @@ export default (configContext) => {
                 defaultMessage: 'Pisiform right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3533,6 +3724,7 @@ export default (configContext) => {
                 defaultMessage: 'Pubis left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3549,6 +3741,7 @@ export default (configContext) => {
                 defaultMessage: 'Pubis right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3565,6 +3758,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius left dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3581,6 +3775,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius left prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3597,6 +3792,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3613,6 +3809,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius left dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3629,6 +3826,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius left mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3645,6 +3843,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius left prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3661,6 +3860,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius right dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3677,6 +3877,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius right prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3693,6 +3894,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3709,6 +3911,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius right dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3725,6 +3928,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius right mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3741,6 +3945,7 @@ export default (configContext) => {
                 defaultMessage: 'Radius right prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3757,6 +3962,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 10 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3773,6 +3979,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 10 left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3789,6 +3996,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 10 left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3805,6 +4013,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 10 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3821,6 +4030,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 10 right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3837,6 +4047,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 10 right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3853,6 +4064,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 11 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3869,6 +4081,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 11 left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3885,6 +4098,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 11 left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3901,6 +4115,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 11 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3917,6 +4132,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 11 right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3933,6 +4149,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 11 right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3949,6 +4166,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 12 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3965,6 +4183,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 12 left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3981,6 +4200,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 12 left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -3997,6 +4217,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 12 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4013,6 +4234,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 12 right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4029,6 +4251,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 12 right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4045,6 +4268,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 1 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4061,6 +4285,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 1 left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4077,6 +4302,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 1 left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4093,6 +4319,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 1 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4109,6 +4336,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 1 right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4125,6 +4353,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 1 right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4141,6 +4370,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 2 left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4157,6 +4387,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 2 left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4173,6 +4404,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 2 left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4189,6 +4421,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 2 right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4205,6 +4438,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 2 right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4221,6 +4455,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 2 right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4237,6 +4472,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~3) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4253,6 +4489,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~3) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4269,6 +4506,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~3) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4285,6 +4523,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~3) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4301,6 +4540,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~3) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4317,6 +4557,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~3) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4333,6 +4574,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~4) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4349,6 +4591,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~4) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4365,6 +4608,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~4) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4381,6 +4625,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~4) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4397,6 +4642,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~4) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4413,6 +4659,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~4) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4429,6 +4676,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~5) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4445,6 +4693,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~5) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4461,6 +4710,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~5) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4477,6 +4727,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~5) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4493,6 +4744,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~5) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4509,6 +4761,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~5) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4525,6 +4778,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~6) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4541,6 +4795,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~6) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4557,6 +4812,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~6) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4573,6 +4829,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~6) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4589,6 +4846,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~6) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4605,6 +4863,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~6) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4621,6 +4880,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~7) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4637,6 +4897,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~7) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4653,6 +4914,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~7) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4669,6 +4931,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~7) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4685,6 +4948,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~7) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4701,6 +4965,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~7) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4717,6 +4982,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~8) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4733,6 +4999,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~8) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4749,6 +5016,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~8) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4765,6 +5033,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~8) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4781,6 +5050,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~8) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4797,6 +5067,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~8) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4813,6 +5084,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~9) left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4829,6 +5101,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~9) left head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4845,6 +5118,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~9) left sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4861,6 +5135,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~9) right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4877,6 +5152,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~9) right head/neck complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4893,6 +5169,7 @@ export default (configContext) => {
                 defaultMessage: 'Rib 3-9 (~9) right sternal end complete',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4909,6 +5186,7 @@ export default (configContext) => {
                 defaultMessage: 'Ribs left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4925,6 +5203,7 @@ export default (configContext) => {
                 defaultMessage: 'Ribs right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4941,6 +5220,7 @@ export default (configContext) => {
                 defaultMessage: 'S1 left ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4957,6 +5237,7 @@ export default (configContext) => {
                 defaultMessage: 'S1 right ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4973,6 +5254,7 @@ export default (configContext) => {
                 defaultMessage: 'S1 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -4989,6 +5271,7 @@ export default (configContext) => {
                 defaultMessage: 'S1',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5005,6 +5288,7 @@ export default (configContext) => {
                 defaultMessage: 'S2 left ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5021,6 +5305,7 @@ export default (configContext) => {
                 defaultMessage: 'S2 right ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5037,6 +5322,7 @@ export default (configContext) => {
                 defaultMessage: 'S2 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5053,6 +5339,7 @@ export default (configContext) => {
                 defaultMessage: 'S2',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5069,6 +5356,7 @@ export default (configContext) => {
                 defaultMessage: 'S3 left ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5085,6 +5373,7 @@ export default (configContext) => {
                 defaultMessage: 'S3 right ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5101,6 +5390,7 @@ export default (configContext) => {
                 defaultMessage: 'S3 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5117,6 +5407,7 @@ export default (configContext) => {
                 defaultMessage: 'S3',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5133,6 +5424,7 @@ export default (configContext) => {
                 defaultMessage: 'S4 left ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5149,6 +5441,7 @@ export default (configContext) => {
                 defaultMessage: 'S4 right ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5165,6 +5458,7 @@ export default (configContext) => {
                 defaultMessage: 'S4 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5181,6 +5475,7 @@ export default (configContext) => {
                 defaultMessage: 'S4',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5197,6 +5492,7 @@ export default (configContext) => {
                 defaultMessage: 'S5 left ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5213,6 +5509,7 @@ export default (configContext) => {
                 defaultMessage: 'S5 right ala',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5229,6 +5526,7 @@ export default (configContext) => {
                 defaultMessage: 'S5 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5245,6 +5543,7 @@ export default (configContext) => {
                 defaultMessage: 'S5',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5261,6 +5560,7 @@ export default (configContext) => {
                 defaultMessage: 'S left ala count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5274,6 +5574,7 @@ export default (configContext) => {
                 defaultMessage: 'S right ala count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5287,6 +5588,7 @@ export default (configContext) => {
                 defaultMessage: 'S centra count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5300,6 +5602,7 @@ export default (configContext) => {
                 defaultMessage: 'Sacrum centra',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5316,6 +5619,7 @@ export default (configContext) => {
                 defaultMessage: 'Sacrum left alae',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5332,6 +5636,7 @@ export default (configContext) => {
                 defaultMessage: 'Sacrum right alae',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5348,6 +5653,7 @@ export default (configContext) => {
                 defaultMessage: 'Sacrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5364,6 +5670,7 @@ export default (configContext) => {
                 defaultMessage: 'Scaphoid left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5380,6 +5687,7 @@ export default (configContext) => {
                 defaultMessage: 'Scaphoid right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5396,6 +5704,7 @@ export default (configContext) => {
                 defaultMessage: 'Scapula left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5412,6 +5721,7 @@ export default (configContext) => {
                 defaultMessage: 'Scapula right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5428,6 +5738,7 @@ export default (configContext) => {
                 defaultMessage: 'Foot sesamoid left count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5441,6 +5752,7 @@ export default (configContext) => {
                 defaultMessage: 'Hand sesamoid left count ',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5454,6 +5766,7 @@ export default (configContext) => {
                 defaultMessage: 'Foot sesamoid right count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5467,6 +5780,7 @@ export default (configContext) => {
                 defaultMessage: 'Hand sesamoid right count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -5480,6 +5794,7 @@ export default (configContext) => {
                 defaultMessage: 'Sphenoid',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5496,6 +5811,7 @@ export default (configContext) => {
                 defaultMessage: 'Sternum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5512,6 +5828,7 @@ export default (configContext) => {
                 defaultMessage: 'T10 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5528,6 +5845,7 @@ export default (configContext) => {
                 defaultMessage: 'T10 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5544,6 +5862,7 @@ export default (configContext) => {
                 defaultMessage: 'T10 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5560,6 +5879,7 @@ export default (configContext) => {
                 defaultMessage: 'T10',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5576,6 +5896,7 @@ export default (configContext) => {
                 defaultMessage: 'T11 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5592,6 +5913,7 @@ export default (configContext) => {
                 defaultMessage: 'T11 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5608,6 +5930,7 @@ export default (configContext) => {
                 defaultMessage: 'T11 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5624,6 +5947,7 @@ export default (configContext) => {
                 defaultMessage: 'T11',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5640,6 +5964,7 @@ export default (configContext) => {
                 defaultMessage: 'T12 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5656,6 +5981,7 @@ export default (configContext) => {
                 defaultMessage: 'T12 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5672,6 +5998,7 @@ export default (configContext) => {
                 defaultMessage: 'T12 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5688,6 +6015,7 @@ export default (configContext) => {
                 defaultMessage: 'T12',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5704,6 +6032,7 @@ export default (configContext) => {
                 defaultMessage: 'T1 left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5720,6 +6049,7 @@ export default (configContext) => {
                 defaultMessage: 'T1 right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5736,6 +6066,7 @@ export default (configContext) => {
                 defaultMessage: 'T1 centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5752,6 +6083,7 @@ export default (configContext) => {
                 defaultMessage: 'T1',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5768,6 +6100,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~2) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5784,6 +6117,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~2) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5800,6 +6134,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~2) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5816,6 +6151,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~2)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5832,6 +6168,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~3) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5848,6 +6185,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~3) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5864,6 +6202,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~3) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5880,6 +6219,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~3)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5896,6 +6236,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~4) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5912,6 +6253,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~4) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5928,6 +6270,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~4) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5944,6 +6287,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~4)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5960,6 +6304,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~5) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5976,6 +6321,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~5) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -5992,6 +6338,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~5) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6008,6 +6355,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~5)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6024,6 +6372,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~6) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6040,6 +6389,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~6) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6056,6 +6406,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~6) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6072,6 +6423,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~6)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6088,6 +6440,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~7) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6104,6 +6457,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~7) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6120,6 +6474,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~7) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6136,6 +6491,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~7)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6152,6 +6508,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~8) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6168,6 +6525,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~8) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6184,6 +6542,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~8) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6200,6 +6559,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~8)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6216,6 +6576,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~9) left arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6232,6 +6593,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~9) right arch',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6248,6 +6610,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~9) centrum',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6264,6 +6627,7 @@ export default (configContext) => {
                 defaultMessage: 'T2-9 (~9)',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6280,6 +6644,7 @@ export default (configContext) => {
                 defaultMessage: 'T left arch count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6293,6 +6658,7 @@ export default (configContext) => {
                 defaultMessage: 'T right arch count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6306,6 +6672,7 @@ export default (configContext) => {
                 defaultMessage: 'T centra count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6319,6 +6686,7 @@ export default (configContext) => {
                 defaultMessage: 'Talus left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6335,6 +6703,7 @@ export default (configContext) => {
                 defaultMessage: 'Talus right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6351,6 +6720,7 @@ export default (configContext) => {
                 defaultMessage: 'Tarsals left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6367,6 +6737,7 @@ export default (configContext) => {
                 defaultMessage: 'Tarsals right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -6383,6 +6754,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LCx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6396,6 +6768,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RCx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6409,6 +6782,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LI1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6422,6 +6796,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RI1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6435,6 +6810,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LI2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6448,6 +6824,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RI2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6461,6 +6838,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LM1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6474,6 +6852,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RM1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6487,6 +6866,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LM2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6500,6 +6880,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RM2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6513,6 +6894,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LM3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6526,6 +6908,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RM3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6539,6 +6922,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LP3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6552,6 +6936,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RP3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6565,6 +6950,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower LP4',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6578,6 +6964,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower RP4',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6591,6 +6978,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LCx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6604,6 +6992,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RCx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6617,6 +7006,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LI1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6630,6 +7020,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RI1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6643,6 +7034,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LI2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6656,6 +7048,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RI2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6669,6 +7062,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LM1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6682,6 +7076,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RM1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6695,6 +7090,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LM2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6708,6 +7104,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RM2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6721,6 +7118,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LM3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6734,6 +7132,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RM3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6747,6 +7146,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LP3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6760,6 +7160,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RP3',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6773,6 +7174,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper LP4',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6786,6 +7188,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper RP4',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6799,6 +7202,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Ldcx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6812,6 +7216,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Rdcx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6825,6 +7230,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Ldi1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6838,6 +7244,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Rdi1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6851,6 +7258,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Ldi2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6864,6 +7272,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Rdi2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6877,6 +7286,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Ldm1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6890,6 +7300,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Rdm1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6903,6 +7314,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Ldm2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6916,6 +7328,7 @@ export default (configContext) => {
                 defaultMessage: 'Lower Rdm2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6929,6 +7342,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Ldcx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6942,6 +7356,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Rdcx',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6955,6 +7370,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Ldi1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6968,6 +7384,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Rdi1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6981,6 +7398,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Ldi2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -6994,6 +7412,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Rdi2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -7007,6 +7426,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Ldm1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -7020,6 +7440,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Rdm1',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -7033,6 +7454,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Ldm2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -7046,6 +7468,7 @@ export default (configContext) => {
                 defaultMessage: 'Upper Rdm2',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -7059,6 +7482,7 @@ export default (configContext) => {
                 defaultMessage: 'Imm. vert. frags count',
               },
             },
+            searchDisabled: false,
             view: {
               type: TextInput,
             },
@@ -7072,6 +7496,7 @@ export default (configContext) => {
                 defaultMessage: 'Temporal left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7088,6 +7513,7 @@ export default (configContext) => {
                 defaultMessage: 'Temporal right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7104,6 +7530,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia left dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7120,6 +7547,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia left prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7136,6 +7564,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7152,6 +7581,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia left dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7168,6 +7598,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia left mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7184,6 +7615,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia left prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7200,6 +7632,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia right dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7216,6 +7649,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia right prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7232,6 +7666,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7248,6 +7683,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia right dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7264,6 +7700,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia right mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7280,6 +7717,7 @@ export default (configContext) => {
                 defaultMessage: 'Tibia right prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7296,6 +7734,7 @@ export default (configContext) => {
                 defaultMessage: 'Trapezium left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7312,6 +7751,7 @@ export default (configContext) => {
                 defaultMessage: 'Trapezium right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7328,6 +7768,7 @@ export default (configContext) => {
                 defaultMessage: 'Trapezoid left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7344,6 +7785,7 @@ export default (configContext) => {
                 defaultMessage: 'Trapezoid right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7360,6 +7802,7 @@ export default (configContext) => {
                 defaultMessage: 'Triquetral left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7376,6 +7819,7 @@ export default (configContext) => {
                 defaultMessage: 'Triquetral right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7392,6 +7836,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna left dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7408,6 +7853,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna left prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7424,6 +7870,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7440,6 +7887,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna left dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7456,6 +7904,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna left mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7472,6 +7921,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna left prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7488,6 +7938,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna right dist. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7504,6 +7955,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna right prox. JS',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7520,6 +7972,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7536,6 +7989,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna right dist. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7552,6 +8006,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna right mid. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7568,6 +8023,7 @@ export default (configContext) => {
                 defaultMessage: 'Ulna right prox. 1/3 shaft',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7584,6 +8040,7 @@ export default (configContext) => {
                 defaultMessage: 'Vertebrae',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7600,6 +8057,7 @@ export default (configContext) => {
                 defaultMessage: 'Vomer',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7616,6 +8074,7 @@ export default (configContext) => {
                 defaultMessage: 'Zygomatic left',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
@@ -7632,6 +8091,7 @@ export default (configContext) => {
                 defaultMessage: 'Zygomatic right',
               },
             },
+            searchDisabled: false,
             view: {
               type: OptionPickerInput,
               props: {
