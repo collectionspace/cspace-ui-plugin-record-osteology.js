@@ -21,7 +21,7 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: path.resolve(__dirname, 'node_modules'),
         use: [
           {
             loader: 'babel-loader',
@@ -37,19 +37,16 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              localIdentName: '[folder]-[name]--[local]',
+              modules: {
+                localIdentName: '[folder]-[name]--[local]',
+              },
             },
           },
         ],
       },
       {
         test: /\.(png|jpg|svg)$/,
-        use: [
-          {
-            loader: 'url-loader',
-          },
-        ],
+        type: 'asset/inline',
       },
     ],
   },
@@ -71,9 +68,10 @@ const config = {
     extensions: ['.js', '.jsx'],
   },
   devServer: {
-    contentBase: __dirname,
     historyApiFallback: true,
-    inline: true,
+    static: {
+      directory: __dirname,
+    },
   },
 };
 

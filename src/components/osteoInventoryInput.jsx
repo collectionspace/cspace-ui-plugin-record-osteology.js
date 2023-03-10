@@ -1505,6 +1505,78 @@ export default (configContext) => {
       this.textFieldNames = {};
     }
 
+    handleChange(event) {
+      const {
+        nodeName,
+        name,
+        type,
+        value,
+        checked,
+      } = event.target;
+
+      const {
+        onCommit,
+        value: data,
+      } = this.props;
+
+      if (nodeName !== 'INPUT' || !onCommit) {
+        return;
+      }
+
+      let nextValue;
+
+      if (type === 'text' || (type === 'radio' && checked)) {
+        nextValue = value;
+      } else if (type === 'checkbox') {
+        nextValue = checked ? value : null;
+      }
+
+      if (typeof nextValue === 'undefined') {
+        return;
+      }
+
+      let nextData = data.set(name, nextValue);
+
+      this.visitedFields = {};
+      this.visitedFields[name] = true;
+
+      if ((name in relations) && relations[name].markVisited) {
+        relations[name].markVisited.forEach((markVisitedFieldName) => {
+          this.visitedFields[markVisitedFieldName] = true;
+        });
+      }
+
+      nextData = this.updateParents(nextData, name);
+
+      if (nextValue === COMPLETE_VALUE || nextValue === ABSENT_VALUE || type === 'checkbox') {
+        nextData = this.updateChildren(nextData, name, nextValue);
+      }
+
+      onCommit(getPath(this.props), nextData);
+    }
+
+    handleMarkAllAbsentButtonClick() {
+      // eslint-disable-next-line no-alert
+      if (window.confirm('Are you sure? This will erase all entered completeness data.')) {
+        this.setAllRadioValues(ABSENT_VALUE);
+      }
+    }
+
+    handleMarkAllPresentButtonClick() {
+      // eslint-disable-next-line no-alert
+      if (window.confirm('Are you sure? This will erase all entered completeness data.')) {
+        this.setAllRadioValues(COMPLETE_VALUE);
+      }
+    }
+
+    handleDeciduousDentZeroButtonClick() {
+      this.setAllTextValues(/^Teeth_decid_[UL]/, '0');
+    }
+
+    handlePermanentDentZeroButtonClick() {
+      this.setAllTextValues(/^Teeth_[UL]/, '0');
+    }
+
     setAllRadioValues(value) {
       const {
         value: data,
@@ -1594,78 +1666,6 @@ export default (configContext) => {
       }
 
       return nextData;
-    }
-
-    handleChange(event) {
-      const {
-        nodeName,
-        name,
-        type,
-        value,
-        checked,
-      } = event.target;
-
-      const {
-        onCommit,
-        value: data,
-      } = this.props;
-
-      if (nodeName !== 'INPUT' || !onCommit) {
-        return;
-      }
-
-      let nextValue;
-
-      if (type === 'text' || (type === 'radio' && checked)) {
-        nextValue = value;
-      } else if (type === 'checkbox') {
-        nextValue = checked ? value : null;
-      }
-
-      if (typeof nextValue === 'undefined') {
-        return;
-      }
-
-      let nextData = data.set(name, nextValue);
-
-      this.visitedFields = {};
-      this.visitedFields[name] = true;
-
-      if ((name in relations) && relations[name].markVisited) {
-        relations[name].markVisited.forEach((markVisitedFieldName) => {
-          this.visitedFields[markVisitedFieldName] = true;
-        });
-      }
-
-      nextData = this.updateParents(nextData, name);
-
-      if (nextValue === COMPLETE_VALUE || nextValue === ABSENT_VALUE || type === 'checkbox') {
-        nextData = this.updateChildren(nextData, name, nextValue);
-      }
-
-      onCommit(getPath(this.props), nextData);
-    }
-
-    handleMarkAllAbsentButtonClick() {
-      // eslint-disable-next-line no-alert
-      if (window.confirm('Are you sure? This will erase all entered completeness data.')) {
-        this.setAllRadioValues(ABSENT_VALUE);
-      }
-    }
-
-    handleMarkAllPresentButtonClick() {
-      // eslint-disable-next-line no-alert
-      if (window.confirm('Are you sure? This will erase all entered completeness data.')) {
-        this.setAllRadioValues(COMPLETE_VALUE);
-      }
-    }
-
-    handleDeciduousDentZeroButtonClick() {
-      this.setAllTextValues(/^Teeth_decid_[UL]/, '0');
-    }
-
-    handlePermanentDentZeroButtonClick() {
-      this.setAllTextValues(/^Teeth_[UL]/, '0');
     }
 
     renderTemplate() {
