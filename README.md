@@ -1,6 +1,7 @@
 # cspace-ui-plugin-record-osteology
 
-[![build status](https://travis-ci.org/collectionspace/cspace-ui-plugin-record-osteology.js.svg?branch=master)](https://travis-ci.org/collectionspace/cspace-ui-plugin-record-osteology.js)
+[![npm package](https://img.shields.io/npm/v/cspace-ui-plugin-record-osteology.svg)](https://www.npmjs.com/package/cspace-ui-plugin-record-osteology)
+[![continuous integration](https://github.com/collectionspace/cspace-ui-plugin-record-osteology.js/actions/workflows/ci-js.yml/badge.svg?branch=master&event=push)](https://github.com/collectionspace/cspace-ui-plugin-record-osteology.js/actions/workflows/ci-js.yml)
 
 Osteology record plugin for the CollectionSpace UI.
 
