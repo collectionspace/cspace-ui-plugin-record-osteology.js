@@ -32,11 +32,11 @@ located at http://localhost:8180.
 
 To run the application against CollectionSpace services located on a different host, edit
 index.html, and change the `serverUrl` configuration property. For example, to use a server running
-on nightly.collectionspace.org, port 8180, use the settings:
+on core.dev.collectionspace.org, use the settings:
 
 ```
 cspaceUI({
-  serverUrl: 'http://nightly.collectionspace.org:8180',
+  serverUrl: 'https://core.dev.collectionspace.org',
   // ...
 });
 ```
